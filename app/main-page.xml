@@ -1,0 +1,8 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
+  <StackLayout>
+    <Label text="Tap the button" class="title"/>
+    <Button class="icon" text="&#xe986;" tap="onTap" />
+    <Label text="{{ message }}" class="message" textWrap="true"/>
+    <HtmlView html="https://google.com" />
+  </StackLayout>
+</Page>
