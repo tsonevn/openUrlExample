@@ -9,5 +9,6 @@ export function navigatingTo(args: EventData) {
 }
 
 export function onTap(args:EventData){
-    openUrl("https://google.com");
+    console.log(args.object.get("id"));
+    openUrl(args.object.get("id"));
 }
