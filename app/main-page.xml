@@ -1,8 +1,9 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
-  <StackLayout>
-    <Label text="Tap the button" class="title"/>
-    <Button class="icon" text="&#xe986;" id="https://www.google.com" tap="onTap" />
-    <Label text="{{ message }}" class="message" textWrap="true"/>
-    <HtmlView html="https://google.com" />
-  </StackLayout>
+<GridLayout rows="70 70 100 40" columns="* 70 *">
+    <Label row="0" col="0" colSpan="3" text="Tap the button" class="title"/>
+    <Button row="1" col="1" class="icon" text="&#xe986;" id="https://www.google.com" tap="onTap" />
+    <WebView row="2" col="0" colSpan="3"  width="100px" isUserInteractionEnabled="true" id="{{webviewid}}" tap="onWebViewTap" src="{{webviewprop}}" />
+    
+    <HtmlView row="3" col="0" colSpan="3"  html="https://google.com" />
+</GridLayout>
 </Page>
